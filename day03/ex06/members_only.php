@@ -1,6 +1,7 @@
 <?php
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 $user = array("zaz" => "Ilovemylittleponey");
-
 if ($_SERVER['PHP_AUTH_USER'] && $user[$_SERVER['PHP_AUTH_USER']] == $_SERVER['PHP_AUTH_PW'])
 {
     $base64 = base64_encode(file_get_contents("../img/42.png"));
