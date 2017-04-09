@@ -7,9 +7,9 @@ if ($_POST['submit'] === 'OK')
     $users_list = ['login' => $login, 'passwd' => $password];
     if ($_POST['login'] && $_POST['passwd'])
     {
-        if (file_exists("../../private/passwd"))
+        if (file_exists("../private/passwd"))
         {
-            $users_list = file_get_contents("../../private/passwd");
+            $users_list = file_get_contents("../private/passwd");
             $content = unserialize($users_list);
             foreach ($content as $check)
             {
@@ -21,15 +21,15 @@ if ($_POST['submit'] === 'OK')
             }
             $content[] = $users_list;
             $content = serialize($content);
-            file_put_contents("../../private/passwd", $content);
+            file_put_contents("../private/passwd", $content);
         }
         else
         {
-            if (!file_exists("../../private"))
-                mkdir("../../private");
+            if (!file_exists("../private"))
+                mkdir("../private");
             $users_list[] = $users_list;
             $content = serialize($users_list);
-            file_put_contents("../../private/passwd", $content);
+            file_put_contents("../private/passwd", $content);
         }
         echo "OK\n";
     }
