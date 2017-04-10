@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="db_orizhiy@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="db_orizhiy">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="test"/>
+    <table id="7" parent="2" name="cinema"/>
+    <table id="8" parent="2" name="distrib"/>
+    <table id="9" parent="2" name="employee"/>
+    <table id="10" parent="2" name="film"/>
+    <table id="11" parent="2" name="ft_table"/>
+    <table id="12" parent="2" name="genre"/>
+    <table id="13" parent="2" name="job"/>
+    <table id="14" parent="2" name="member"/>
+    <table id="15" parent="2" name="member_history"/>
+    <table id="16" parent="2" name="program_grid"/>
+    <table id="17" parent="2" name="promotion"/>
+    <table id="18" parent="2" name="subscription"/>
+    <table id="19" parent="2" name="user_card"/>
+    <column id="20" parent="7" name="id_cinema">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="7" name="number_cinema">
+      <Position>2</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="7" name="name_cinema">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="7" name="floor_number">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="7" name="nb_seats">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="25" parent="7" name="PRIMARY">
+      <ColNames>id_cinema</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="26" parent="8" name="id_distrib">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="8" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="8" name="phone_number">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="8" name="address">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="8" name="zipcode">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="31" parent="8" name="city">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="32" parent="8" name="country">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="33" parent="8" name="PRIMARY">
+      <ColNames>id_distrib</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="34" parent="9" name="id_employee">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="9" name="id_user_card">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="9" name="id_job">
+      <Position>3</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="9" name="schedule">
+      <Position>4</Position>
+      <DataType>enum(&apos;&apos;, &apos;pm&apos;, &apos;am&apos;)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="9" name="date_employment">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="39" parent="9" name="PRIMARY">
+      <ColNames>id_employee</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="10" name="id_film">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="10" name="id_genre">
+      <Position>2</Position>
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="42" parent="10" name="id_distrib">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="43" parent="10" name="title">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="10" name="summary">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="10" name="release_date">
+      <Position>6</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="10" name="last_projection">
+      <Position>7</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="10" name="duration">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="10" name="prod_year">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="49" parent="10" name="id_distrib">
+      <ColNames>id_distrib</ColNames>
+    </index>
+    <index id="50" parent="10" name="id_genre">
+      <ColNames>id_genre</ColNames>
+    </index>
+    <key id="51" parent="10" name="PRIMARY">
+      <ColNames>id_film</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="11" name="login">
+      <Position>2</Position>
+      <DataType>char(8)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;toto&apos;</DefaultExpression>
+    </column>
+    <column id="54" parent="11" name="group">
+      <Position>3</Position>
+      <DataType>enum(&apos;staff&apos;, &apos;student&apos;, &apos;other&apos;)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="11" name="creation_date">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="56" parent="11" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="57" parent="12" name="id_genre">
+      <Position>1</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="12" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="59" parent="12" name="PRIMARY">
+      <ColNames>id_genre</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="60" parent="13" name="id_job">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="13" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="13" name="salary">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="13" name="manager">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="64" parent="13" name="PRIMARY">
+      <ColNames>id_job</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="65" parent="14" name="id_member">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="14" name="id_user_card">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="14" name="id_sub">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="68" parent="14" name="date_sub">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="69" parent="14" name="id_last_film">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="14" name="date_last_film">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="71" parent="14" name="date_subscription">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <index id="72" parent="14" name="id_sub">
+      <ColNames>id_sub</ColNames>
+    </index>
+    <key id="73" parent="14" name="PRIMARY">
+      <ColNames>id_member</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="74" parent="15" name="id_member">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="75" parent="15" name="id_film">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="15" name="date">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="77" parent="15" name="id_film">
+      <ColNames>id_film</ColNames>
+    </index>
+    <index id="78" parent="15" name="id_member">
+      <ColNames>id_member</ColNames>
+    </index>
+    <column id="79" parent="16" name="id_film">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="16" name="id_room">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="81" parent="16" name="id_user_card_usher">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="16" name="id_user_card_technician">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="16" name="id_user_card_cleaning">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="84" parent="16" name="beginning_show">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="16" name="end_show">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="17" name="id_promotion">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="17" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="17" name="begin_date">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="89" parent="17" name="en_date">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="90" parent="17" name="promo_percentage">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="91" parent="17" name="PRIMARY">
+      <ColNames>id_promotion</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="92" parent="18" name="id_sub">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="93" parent="18" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="94" parent="18" name="summary">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="95" parent="18" name="price">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="18" name="duration_sub">
+      <Position>5</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="97" parent="18" name="PRIMARY">
+      <ColNames>id_sub</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="98" parent="19" name="id_user">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="99" parent="19" name="last_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="100" parent="19" name="first_name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="101" parent="19" name="birthdate">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="102" parent="19" name="email">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="103" parent="19" name="address">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="104" parent="19" name="zipcode">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="105" parent="19" name="city">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="106" parent="19" name="country">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="107" parent="19" name="PRIMARY">
+      <ColNames>id_user</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
