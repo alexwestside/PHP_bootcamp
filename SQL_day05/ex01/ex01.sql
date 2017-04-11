@@ -1,4 +1,3 @@
-USE db_orizhiy;
 CREATE TABLE IF NOT EXISTS ft_table
 (
   id            INT                                NOT NULL PRIMARY KEY AUTO_INCREMENT,

@@ -1,4 +1,3 @@
-USE db_orizhiy;
 INSERT INTO
   ft_table (login, `group`, creation_date)
 VALUES
@@ -6,4 +5,4 @@ VALUES
   ("scadou", "student", "2014-01-01"),
   ("chap", "staff", "2011-04-27"),
   ("bambou", "staff", "2014-03-01"),
-  ("fantomet", "staff");
+  ("fantomet", "staff", "2010-04-03");

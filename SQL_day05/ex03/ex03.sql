@@ -1,4 +1,3 @@
-USE db_orizhiy;
 INSERT INTO
   ft_table (login, creation_date, `group`)
   SELECT
