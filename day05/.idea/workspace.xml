@@ -285,8 +285,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,9 +387,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ex09/ex09.sql" />
-    <entry file="file://$PROJECT_DIR$/ex11/ex11.sql" />
-    <entry file="file://$PROJECT_DIR$/ex12/ex12.sql" />
     <entry file="file://$PROJECT_DIR$/ex13/ex13.sql" />
     <entry file="dbDummy://dbtable:/a657a411/fe3a5352-dc48-4115-8181-fa0880e5d6c4/db_orizhiy.genre" />
     <entry file="file://$PROJECT_DIR$/ex10/ex10.sql" />
@@ -587,6 +584,30 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/a657a411/8b271d8e-f278-4a15-82f4-f2b58c73adbd/db_orizhiy.member" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fe3a5352-dc48-4115-8181-fa0880e5d6c4/console_3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fe3a5352-dc48-4115-8181-fa0880e5d6c4/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fe3a5352-dc48-4115-8181-fa0880e5d6c4/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fe3a5352-dc48-4115-8181-fa0880e5d6c4/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">

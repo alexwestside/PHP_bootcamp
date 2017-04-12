@@ -1,0 +1,35 @@
+<- Vector ----------------------------------------------------------------------
+
+The Vector Class class handles a convention.
+
+A vector is represented by the following characteristics:
+• x magnitude
+• y magnitude
+• z magnitude
+• w coordinate
+
+The Vector Class possess private attributes to represent the four characteristics.
+
+The Class’ constructor is waiting for an array. The following keys are required:
+’dest’: the vector’s destination vertex, mandatory.
+’orig’: the vector’s origin vertex, optional, by default is worth a new instance of the x=0, y=0, z=0, w=1 vertex.
+
+The Class include a Boolean static attribute verbose to control the displays related to the use of the Class. This attribute is initially False.
+
+The class provides the following methods :
+• __toString method.
+• __destruct method.
+If static attribute verbose is true, then the Class constructor and destructor will produce an output.
+• doc method - returns the documentation of the class in a string. Documentation read from a Vector.doc.txt file.
+• magnitude() : returns the vector’s length (or "norm").
+• normalize() : returns a normalized version of the vector. If the vector is already normalized, returns a fresh copy of the vector.
+• add(Vector $arg) : returns the sum vector of both vectors.
+• sub(Vector $arg) : returns the difference vector of both vectors.
+• opposite() : returns the opposite vector.
+• scalarProduct($mult) : returns the multiplication of the vector with a scalar.
+• dotProduct(Vector $arg) : returns the angle’sAppendix cosine between both vectors.
+• cos(Vector $arg) : returns the angle’sAppendix cosine between both vectors.
+• crossProduct(Vector $rhs) : returns the cross multiplication of both vectors (right-hand mark!)
+Methods from the Vector Class never modify the current instance.
+Your Vector Class have at least the following public methods.
+---------------------------------------------------------------------- Vector ->

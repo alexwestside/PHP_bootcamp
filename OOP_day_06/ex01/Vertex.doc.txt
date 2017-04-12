@@ -1,0 +1,31 @@
+<- Vertex ----------------------------------------------------------------------
+
+The Vertex Class class represent a point in space: the "vertex".
+
+A vector is represented by the following characteristics:
+• x axis coordinate
+• y axis coordinate
+• z depth coordinate
+• w coordinate
+• color
+
+The Vertex Class possess private attributes to represent the five characteristics.
+The vertex color always instance of the Color Class.
+The Vertex Class provide reading and writing assessors for five attributes.
+The Class’ constructor is waiting for an array.
+The following keys are required:
+’x’: x axis coordinate.
+’y’: y axis coordinate.
+’z’: z axis coordinate.
+’w’: optional, by default is worth 1.0.
+’color’: optional, by default is worth a new instance of the color white.
+
+The Class include a Boolean static attribute called verbose to control the displays related to the use of the Class.
+This attribute is initially False.
+
+The class provides the following methods :
+• __toString method.
+• __destruct method.
+If static attribute verbose is true, then the Class constructor and destructor will produce an output.
+• doc method - returns the documentation of the class in a string. Documentation read from a Vector.doc.txt file. Vertex.doc.txt.
+---------------------------------------------------------------------- Vertex ->
