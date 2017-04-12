@@ -1,3 +1,2 @@
-USE db_orizhiy;
-SELECT avg(nb_seats)
-FROM cinema;
+SELECT avg(db_orizhiy.cinema.nb_seats)
+FROM db_orizhiy.cinema;

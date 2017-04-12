@@ -1,5 +1,4 @@
-USE db_orizhiy;
 SELECT count(*)
   AS 'nb_short-films'
-FROM film
-WHERE duration <= 42
+FROM db_orizhiy.film
+WHERE db_orizhiy.film.duration <= 42

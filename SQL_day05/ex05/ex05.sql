@@ -1,3 +1,2 @@
-USE db_orizhiy;
-DELETE FROM ft_table
-WHERE id <= 5;
+DELETE FROM db_orizhiy.ft_table
+WHERE db_orizhiy.ft_table.id <= 5;

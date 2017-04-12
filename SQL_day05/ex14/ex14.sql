@@ -1,5 +1,4 @@
-USE db_orizhiy;
-SELECT cinema.floor_number AS 'floor', SUM(cinema.nb_seats) AS 'seats'
-FROM cinema
-GROUP BY cinema.floor_number
+SELECT db_orizhiy.cinema.floor_number AS 'floor', SUM(db_orizhiy.cinema.nb_seats) AS 'seats'
+FROM db_orizhiy.cinema
+GROUP BY floor
 ORDER BY seats DESC;

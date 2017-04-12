@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS ft_table
+CREATE TABLE IF NOT EXISTS db_orizhiy.ft_table
 (
   id            INT                                NOT NULL PRIMARY KEY AUTO_INCREMENT,
   login         CHAR(8)                            NOT NULL             DEFAULT 'toto',

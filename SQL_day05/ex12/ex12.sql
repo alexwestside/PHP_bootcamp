@@ -1,7 +1,6 @@
-USE db_orizhiy;
 SELECT
-  user_card.last_name,
-  user_card.first_name
-FROM user_card
-WHERE user_card.first_name LIKE '%-%' OR user_card.last_name LIKE '%-%'
-ORDER BY user_card.last_name, user_card.first_name;
+  db_orizhiy.user_card.last_name,
+  db_orizhiy.user_card.first_name
+FROM db_orizhiy.user_card
+WHERE db_orizhiy.user_card.first_name LIKE '%-%' OR db_orizhiy.user_card.last_name LIKE '%-%'
+ORDER BY db_orizhiy.user_card.last_name, db_orizhiy.user_card.first_name;

@@ -5,7 +5,7 @@ SELECT
   db_orizhiy.distrib.name    AS 'name_distrib',
   db_orizhiy.film.title      AS 'title_film'
 FROM db_orizhiy.film
-  LEFT JOIN distrib
+  LEFT JOIN db_orizhiy.distrib
     ON db_orizhiy.distrib.id_distrib = db_orizhiy.film.id_distrib
   LEFT JOIN genre
     ON db_orizhiy.genre.id_genre = db_orizhiy.film.id_genre

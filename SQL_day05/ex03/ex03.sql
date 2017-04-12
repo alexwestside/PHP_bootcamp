@@ -1,12 +1,12 @@
 INSERT INTO
-  ft_table (login, creation_date, `group`)
+  db_orizhiy.ft_table (login, creation_date, `group`)
   SELECT
-    user_card.last_name,
-    user_card.birthdate,
+    db_orizhiy.user_card.last_name,
+    db_orizhiy.user_card.birthdate,
     'other'
-  FROM user_card
-  WHERE user_card.last_name LIKE '%a%'
+  FROM db_orizhiy.user_card
+  WHERE db_orizhiy.user_card.last_name LIKE '%a%'
         AND
-        CHAR_LENGTH(user_card.last_name) < 9
+        CHAR_LENGTH(db_orizhiy.user_card.last_name) < 9
   ORDER BY last_name
   LIMIT 10;
