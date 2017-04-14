@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex01</title>
+    <script>
+        function make() {
+            var left_member = document.getElementById('left member');
+            var operators = document.getElementById('operators');
+            var right_member = document.getElementById('right member');
+            var try_me = document.getElementById('try_me');
+
+            function print(text) {
+                console.log(text);
+                alert(text);
+            }
+
+            function make_calculate() {
+                num1 = parseInt(left_member.value);
+                num2 = parseInt(right_member.value);
+                oper = operators.value;
+                if (num2 == 0 && (oper === "div" || oper === "mod"))
+                    print("It’s over 9000!");
+                else if ((isNaN(num1) || isNaN(num2)) || (num1 < 0 || num2 < 0))
+                    print("’Error :(");
+                else
+                    print(oper === "add" ? num1 + num2 : oper === "sub" ? num1 - num2 : oper === "mult" ? num1 * num2 : oper === "div" ? num1 / num2 : oper === "mod" ? num1 % num2 : 0);
+            }
+
+            setInterval(function () {
+                alert("Please, use me...")
+            }, 30000);
+            make_calculate();
+        }
+    </script>
+</head>
+<body>
+<input id="left member"/>
+<select id="operators">
+    <option value="add" selected>+</option>
+    <option value="sub" selected>-</option>
+    <option value="mult" selected>*</option>
+    <option value="div" selected>/</option>
+    <option value="mod" selected>%</option>
+</select>
+<input id="right member"/>
+<input onclick="make()" id="try_me" type="submit" value="Try me!"/>
+</body>
+</html>

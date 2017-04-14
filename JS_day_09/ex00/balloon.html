@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex00</title>
+    <script>
+        var color_cur = 0;
+        function size()
+        {
+            var cur_ballon = document.getElementById("balloon");
+            var diametr = parseInt(cur_ballon.style.height);
+            diametr += 10;
+            if (diametr < 200 || diametr > 420)
+                diametr = 200;
+            cur_ballon.style.width = diametr + "px";
+            cur_ballon.style.height = diametr + "px";
+        }
+        function color()
+        {
+            var cur_ballon = document.getElementById("balloon");
+            var color_arr = ["red", "green", "blue"];
+            color_cur++;
+            if (color_cur < 0)
+                color_cur = 2;
+            else if (color_cur > 3)
+                color_cur = 0;
+            cur_ballon.style.backgroundColor = color_arr[color_cur];
+        }
+        function leave()
+        {
+            var cur_ballon = document.getElementById("balloon");
+            var diametr = parseInt(cur_ballon.style.height);
+            diametr -= 5;
+            var color_arr = ["red", "green", "blue"];
+            color_cur--;
+            if (color_cur < 0)
+                color_cur = 2;
+            else if (color_cur > 3)
+                color_cur = 0;
+            if (diametr < 200 || diametr > 420)
+                diametr = 200;
+            cur_ballon.style.width = diametr + "px";
+            cur_ballon.style.height = diametr + "px";
+            cur_ballon.style.backgroundColor = color_arr[color_cur];
+        }
+    </script>
+</head>
+<body>
+<div id="balloon" onclick="size(); color()" onmouseleave="leave()" style="width:200px; height:200px; background-color:red; border-radius:100%;">
+</div>
+</body>
+</html>
