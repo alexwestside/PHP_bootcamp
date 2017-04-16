@@ -1,12 +1,13 @@
 
+
 function prompt_task()
 {
-    // console.log("Clicked the button...");
+    console.log("Clicked the button...");
     var text = prompt("Fill in a new TO DO in your list: ", "");
     if (text)
         add_task(text);
-    // else
-        // console.log("Canceled...");
+    else
+    console.log("Canceled...");
 
     function add_task(text) {
         var new_elem = document.createElement("Li");
