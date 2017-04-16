@@ -1,0 +1,55 @@
+
+<- Ship ------------------------------------------------------------------------
+The Ship class handles different ships.
+
+An instance can be constructed from following parameters (better to add your own
+ class):
+ new Ship(array(
+ 'name' => "Scout",
+ 'size' => "4x1",
+ 'sprite' => "http://i.imgur.com/XcnM09t.png",
+ 'hp' => 5,
+ 'engine' => 10,
+ 'handling' => 4,
+ 'shield' => 0,
+ 'xpos' => $x,
+ 'ypos' => $y,
+ 'team' => $team,
+ 'weapons' => new Laser()
+ ));
+
+The class provides the following methods :
+
+bool outOfBorders($xsize, $ysize)
+checks if ship out of borders 0 <  < [x,y]size
+
+bool occupy($x, $y)
+checks if ship occupy spot on map with $x $y coordinates
+
+public function receiveDamage($dmg)
+adds damage to ship
+
+public function getSizeX()
+returns xsize of ship
+
+public function getSizeY()
+returns ysize of ship
+
+public function getSprite()
+returns sprite of ship
+
+public function getHp()
+return current hp level
+
+bool isAnker($x, $y)
+checks if cell is top left corner of ship
+
+public function move($x, $y)
+moves ship on $x and $y dist
+
+public function fire($gz)
+fires from ship weapon
+
+public function resetPP()
+resets PP of ship
+-------------------------------------------------------------------- Ship ----->

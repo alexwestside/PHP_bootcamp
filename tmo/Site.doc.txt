@@ -1,0 +1,27 @@
+
+<- Site -----------------------------------------------------------------------
+The Site Class class represent .
+
+The class provides the following methods :
+• login
+
+• hash
+
+• register
+
+• logout
+
+• newGame
+
+• joinGame
+
+• viewAllGames
+
+• saveGameZone
+
+• loadGameZone
+
+• delGame
+
+
+-------------------------------------------------------------------- Site ---->

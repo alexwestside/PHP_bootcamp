@@ -1,0 +1,16 @@
+
+
+<- Laser -----------------------------------------------------------------------
+The Laser class represents weapon for class ship.
+
+The class provides the following methods :
+• __construct -
+instance can be constructed without params
+• range -
+int range($i)
+returns value of dice needed to be reached of shot
+• dice -
+int   dice($num)
+returns damage dealed by laser by rolling a dice
+
+-------------------------------------------------------------------- Laser ---->

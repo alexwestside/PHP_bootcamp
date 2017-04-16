@@ -1,0 +1,18 @@
+
+
+<- Laser -----------------------------------------------------------------------
+The Laser class represents weapon for class ship.
+
+An instance can be constructed without params:
+new Laser()
+
+The class provides following methods:
+GameZone fire($x, $y, $rot, $gz, $cur)
+Charges laser blast from $x $y pos, and $rot rotation angle (0 or 180)
+
+int range($i)
+returns value of dice needed to be reached of shot
+
+int   dice($num)
+returns damage dealed by laser by rolling a dice
+-------------------------------------------------------------------- Laser ---->
