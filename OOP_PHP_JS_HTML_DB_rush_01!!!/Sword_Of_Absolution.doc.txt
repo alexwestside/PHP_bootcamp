@@ -1,0 +1,44 @@
+
+
+<- Sword_Of_Absolution -----------------------------------------------------------------------
+
+The Sword_Of_Absolution class handles special parameters for class Ship to represent Imperial Destroyer spacecraft,
+with the following characteristics:
+Name: "Sword Of Absolution"
+Size: 1x3 cases
+Hull points: 4
+PP: 10
+Speed: 18
+Handling: 3
+Shield : 0
+Weapons: Side laser batteries
+
+The Class’ constructor is waiting for a following characteristics:
+• x coordinates
+• y coordinates
+• $team params characteristics:
+    • Name : The name of the vessels.
+    • Size : Width and lengths of a Spaceship.
+    • Sprite or equivalent : Representation of the ship on the grid.
+    • Hull points : life points of the ship.
+    • Engine power : The engine power gives the ship a number of points that the
+players will be able to attribute to different actions when activating a ship
+depending on situations.
+    • Speed : Maximum number of cells that the ship can move each turn.
+    • Handling: Number of cells that a ship that moved on the prior turn needs to
+travel straight this turn if he wants to stay stationery for the next one
+before he can turn to the right or to the left AND between each turn.
+    • Shield: Number of damage points that a ship can endure before losing his hull
+points.
+    • Weapons: List of weapons that each ship owns, generally one or two, sometimes
+more for the really big ships. Each weapon needs PP to function.
+
+With this characteristics we can construct new Honorable_Duty($x, $y, $team).
+
+The class provides only preset of params for easy initialization of new ship
+
+The class provides the following methods :
+• __construct.
+• doc method - returns the documentation of the class in a string. Documentation read from a Sword_Of_Absolution.doc.txt file.
+
+-------------------------------------------------------------------- Sword_Of_Absolution ---->
